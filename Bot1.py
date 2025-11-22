@@ -68,7 +68,7 @@ async def auto_send(channel : discord.TextChannel):
 async def on_ready():
 
     if not auto_send.is_running():
-        channel = await client.fetch_channel(1268392275147489357)
+        channel = await client.fetch_channel(ChannelID)
         auto_send.start(channel)
 
     print('Ready')
